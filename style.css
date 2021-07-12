@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  background: #191818;
+  font-family: 'Roboto', sans-serif;
+}
+.main{
+  width: 100%;
+  overflow: hidden;
+}
+section {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background: transparent;
+}
+section header{
+width: 50%;
+margin: auto;
+text-align: center;
+margin-top: 10%;
+}
+section header h3{
+  font-size: 30px;
+  padding: 10px;
+}
+section h1{
+  font-family: 'Lobster', cursive;
+  font-size: 70px;
+  padding: 10px;
+  position: relative;
+  z-index: 9;
+  background: transparent;
+}
+section header p{
+  position: relative;
+  z-index: 9;
+  background: transparent;
+}
+
+section header.one{
+  position: relative;
+}
+.box{
+  width: 500px;
+  height: 500px;
+  background: transparent;
+  border:16px solid #4c566a;
+  transform: rotateZ(65deg);
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  z-index: 1;
+
+}
+
+
+.img{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.img img{
+  width: 20%;
+  position: absolute;
+  top: -10%;
+  left: 37%;
+  z-index: 9;
+}
+.main section.three{
+  position: relative;
+}
+.ball{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: tomato;
+  position: absolute;
+  top:0px ;
+}
+.ball.one{
+ top: 40%;
+}
+.ball.two{
+  top: 0px;
+  left: 50%;
+  
+ }
+.ball:nth-child(2){
+   width: 200px;
+   height: 200px;
+  background: turquoise;
+}
+.square{
+  position: absolute;
+  right: 0px;
+  top: 30%;
+  width: 300px;
+  height: 300px;
+  background: #B2EC5D;
+}
+
+.three p{
+  position: absolute;
+  top: 59%;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  background: transparent;
+  color: white;
+}
+
+.bubble {
+  width: 140px;
+  height: 140px;
+  opacity: 1;
+  position: absolute;
+}
+
+.bubble.blue {
+  background: #68e4f1;
+}
+
+
+body{
+background: rgb(61, 63, 65);
+color: silver;
+}
+.container {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+button{
+background: rgb(53, 56, 56);
+width: 120px;
+color: rgb(224, 212, 212);
+padding: 5px;
+border-radius: 5px;
+}
+button:hover{
+background: rgb(15, 15, 15);
+color: rgb(248, 240, 240);
+}
+input{
+width: 120px;
+height: 25px;
+margin-bottom: 5px;
+text-align: center;
+
+}
+a {
+color: rgb(245, 239, 239);
+text-decoration: none;
+}   
+a:visited {
+color: rgb(245, 239, 239);
+text-decoration: none;
+}
+ul li{
+list-style: none;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel = "stylesheet" href="./style.css"/>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheelhouse project</title>
+  </head>
+  <body>
+
+    <div class="main" id="main">
+      <section>
+        <header>
+          
+          <h3>Yep ! Scrolling time</h3>
+          <h1 class="lax lax_preset_scaleInOut:136:0">Scrolling to look at our features</h1>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </header>
+      </section>
+      
+      <div class="img">
+          <img src="blob" id="picsum2" alt="" class="lax lax_preset_slideX:912:500 lax_preset_scaleOut:304:0.8 lax_preset_jiggle:50:20">
+          <img src="blob" id="picsum3" alt="" class="lax lax_preset_slideX:912:-500 lax_preset_scaleOut:304:0.8 lax_preset_jiggle:50:20">
+          <img src="blob" id="picsum4" alt="" class="lax lax_preset_scaleOut:181:0.5 lax_preset_jiggle:50:20" >
+      </div>
+      <section>
+        <div class="container">
+          <h1>Fetch random image from Lorem Picsum</h1>
+          <br>
+          <img src="blob" id="picsum" class = "lax lax_preset_jiggle:50:20" >
+          <br>
+          <input type="text" id="picsumSize" placeholder="choose size"><br>
+          <button onclick={catchImage()}>Get New Image</button>
+          <br><br>
+          <p>
+            Image fetched from <a href="https://picsum.photos/">Lorem Picsum Site</a> <br> default size 320x320 px.
+          </p>
+          <p></p>
+          
+        </div>
+      </section>
+      <section>
+        <header class="one">
+          <h1 class= "lax lax_preset_scaleOut:181:0.5 lax_preset_zigzag:184:200 ">Scrolling to look at our features</h1>
+          <p class="lax lax_preset_scaleInOut:304:0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>\
+           <div class="box lax lax_preset_spin:912:360 lax_preset_slideX:612:295 lax_preset_slideY:612:295"></div>   
+        </header> 
+      </section>
+      
+      <section class="three">
+        <h1 class="lax lax_preset_fadeInOut:242.25:0 lax_preset_seesaw:140:20">The end</h1>  
+      </section>
+      
+    </div>
+
+
+    <script>
+      window.onload = function () {
+        lax.init()
+    
+        // Add a driver that we use to control our animations
+        lax.addDriver('scrollY', function () {
+          return window.scrollY
+        })
+    
+        // Add animation bindings to elements
+        lax.addElements('.selector', {
+          scrollY: {
+            translateX: [
+              ["elInY", "elCenterY", "elOutY"],
+              [0, 'screenWidth/2', 'screenWidth'],
+            ]
+          }
+        })
+      }
+    </script>
+
+    <script type="module" src="/main.js"></script>
+    <script src="node_modules/lax.js/lib/lax.min.js"></script>
+  </body>
+</html>
